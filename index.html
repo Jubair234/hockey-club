@@ -30,6 +30,7 @@
                         clifford: '#da373d',
                         'btn-bg': '#FF4240',
                         'text-color': '#FF4240',
+                        'slider-arrow': '#131318',
                     }
                 }
             }
@@ -43,8 +44,8 @@
         <div class="navbar bg-base-100">
             <div class="navbar-start">
                 <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                    <div tabindex="0" role="button" class="btn  lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M4 6h16M4 12h8m-8 6h16" />
@@ -52,12 +53,12 @@
                     </div>
                     <ul tabindex="0"
                         class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100  rounded-box w-52">
-                        <li><a>Home</a></li>
-                        <li><a>About</a></li>
-                        <li><a>Pages</a></li>
-                        <li><a>Blog</a></li>
-                        <li><a>Contact</a></li>
-                        <li> <a href=""><i class='bx bx-search'></i></a>
+                        <li><a class="hover:bg-btn-bg hover:text-white">Home</a></li>
+                        <li><a class="hover:bg-btn-bg hover:text-white">About</a></li>
+                        <li><a class="hover:bg-btn-bg hover:text-white">Pages</a></li>
+                        <li><a class="hover:bg-btn-bg hover:text-white">Blog</a></li>
+                        <li><a class="hover:bg-btn-bg hover:text-white">Contact</a></li>
+                        <li> <a href="" class="hover:bg-btn-bg hover:text-white"><i class='bx bx-search'></i></a>
                         </li>
                     </ul>
                 </div>
@@ -77,8 +78,129 @@
                 <a class="btn bg-btn-bg text-white font-bold  text-xl hover:text-text-color">Get Ticket</a>
             </div>
         </div>
+
+
+        <!-- banner -->
+        <div
+            class="carousel overflow-hidden lg:w-full mt-4 lg:mt-12 min-h-[300px] lg:h-[500px] ml-4 lg:ml-0 w-11/12 rounded-2xl border-transparent ">
+            <div id="slide1" class="carousel-item relative  w-full ">
+                <img src="Images/1.png" class="w-full" />
+                <div
+                    class="absolute flex justify-between transform translate-x-1/2 lg:-translate-x-0 -translate-y-4 lg:-translate-y-1/2 left-24 lg:left-5 bottom-0  lg:bottom-5 top-2/2">
+                    <a href="#slide4" class="btn btn-circle bg-slider-arrow border-none mr-1  text-white">❮</a>
+                    <a href="#slide2" class="btn btn-circle bg-slider-arrow border-none ml-1 text-white">❯</a>
+                </div>
+                <div
+                    class="absolute hidden lg:block bg-black w-full lg:w-5/12 space-y-3 p-5 rounded-2xl text-white transform -translate-y-2/2 lg:-translate-y-1/2 lg:right-10 -bottom-1/2  lg:-bottom-5 top-2/2">
+                    <h3 class="text-[18px] lg:text-2xl font-extrabold">Meet all the heroes from the field</h3>
+                    <p class="text-base text-left font-medium">"In the heart of town, the hockey club thrived
+                        communities with passion, teamwork, and the love for the game."
+                </div>
+
+            </div>
+
+
+            <div id="slide2" class="carousel-item relative  w-full">
+                <img src="Images/2.png" class="w-full" />
+                <div
+                class="absolute flex justify-between transform translate-x-1/2 lg:-translate-x-0 -translate-y-4 lg:-translate-y-1/2 left-24 lg:left-5 bottom-0  lg:bottom-5 top-2/2">                    <a href="#slide1" class="btn btn-circle bg-slider-arrow border-none mr-1 text-white">❮</a>
+                    <a href="#slide3" class="btn btn-circle bg-slider-arrow border-none ml-1 text-white">❯</a>
+                </div>
+                <div
+                    class="absolute bg-black w-full lg:w-5/12 space-y-3 p-5 rounded-2xl text-white transform -translate-y-2/2 lg:-translate-y-1/2 lg:right-10 -bottom-1/2  lg:-bottom-5 top-2/2">
+                    <h3 class="text-[18px] lg:text-2xl font-extrabold">Meet all the heroes from the field</h3>
+                    <p class="text-base text-left font-medium">"In the heart of town, the hockey club thrived
+                        communities with passion, teamwork, and the love for the game."
+                </div>
+            </div>
+            <div id="slide3" class="carousel-item relative  w-full">
+                <img src="Images/3.png" class="w-full" />
+                <div
+                class="absolute flex justify-between transform translate-x-1/2 lg:-translate-x-0 -translate-y-4 lg:-translate-y-1/2 left-24 lg:left-5 bottom-0  lg:bottom-5 top-2/2">                    <a href="#slide2" class="btn btn-circle bg-slider-arrow border-none mr-1 text-white">❮</a>
+                    <a href="#slide1" class="btn btn-circle bg-slider-arrow border-none ml-1 text-white">❯</a>
+                </div>
+                <div
+                    class="absolute bg-black w-full lg:w-5/12 space-y-3 p-5 rounded-2xl text-white transform -translate-y-2/2 lg:-translate-y-1/2 lg:right-10 -bottom-1/2  lg:-bottom-5 top-2/2">
+                    <h3 class="text-[18px] lg:text-2xl font-extrabold">Meet all the heroes from the field</h3>
+                    <p class="text-base text-left font-medium">"In the heart of town, the hockey club thrived
+                        communities with passion, teamwork, and the love for the game."
+                </div>
+            </div>
+
+        </div>
+        <div class=" block lg:hidden bg-black w-11/12 mx-auto mt-4 space-y-3 p-5 rounded-2xl text-white">
+            <h3 class="text-[18px] lg:text-2xl font-extrabold">Meet all the heroes from the field</h3>
+            <p class="text-base text-left font-medium">"In the heart of town, the hockey club thrived
+                communities with passion, teamwork, and the love for the game."
+        </div>
     </header>
-    <main></main>
+    <main class="container mx-auto my-20">
+
+        <!-- Professional hockey club  -->
+        <section class="mt-10">
+            <h2 class="text-4xl text-center font-extrabold ">Professional Hockeys Club</h2>
+            <p class="w-1/2 text-center mx-auto text-base font-medium my-4">"Hockey is a unique sport in the sense that
+                you need each and every guy helping each other and pulling in
+                the same direction to be successful." - Wayne Gretzky</p>
+
+            <div class="grid px-9  grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-5 my-16">
+
+                <div class="card  bg-base-100 items-center">
+                    <div class="radial-progress rotate-[145deg] shadow-lg text-[#FF4240]"
+                        style="--value:87; --size:8rem; --thickness: 10px;" role="progressbar"><span
+                            class="text-[28px] font-extrabold -rotate-[145deg] text-[#131318]">87%</span> </div>
+
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Prayer Facility</h2>
+                        <p>Prayer Facility: Sacred space for spiritual solace.</p>
+
+                    </div>
+                </div>
+
+                <div class="card  bg-base-100 items-center">
+                    <div class="radial-progress rotate-[90deg] shadow-lg text-[#49D293]"
+                        style="--value:95; --size:8rem; --thickness: 10px;" role="progressbar"><span
+                            class="text-[28px] font-extrabold -rotate-[90deg] text-[#131318]">95%</span> </div>
+
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Experienced Coach</h2>
+                        <p>Prayer Facility: Sacred space for spiritual solace.</p>
+
+                    </div>
+                </div>
+
+                <div class="card  bg-base-100 items-center">
+                    <div class="radial-progress rotate-[140deg] shadow-lg text-[#FFB546]"
+                        style="--value:90; --size:8rem; --thickness: 10px;" role="progressbar"><span
+                            class="text-[28px] font-extrabold -rotate-[140deg] text-[#131318]">90%</span> </div>
+
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Senior Player</h2>
+                        <p>Prayer Facility: Sacred space for spiritual solace.</p>
+
+                    </div>
+                </div>
+
+                <div class="card  bg-base-100 items-center">
+                    <div class="radial-progress rotate-[145deg] shadow-lg text-[#4C8DF1]"
+                        style="--value:80; --size:8rem; --thickness: 10px;" role="progressbar"><span
+                            class="text-[28px] font-extrabold -rotate-[145deg] text-[#131318]">80%</span> </div>
+
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Training Ground</h2>
+                        <p>Prayer Facility: Sacred space for spiritual solace.</p>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+        </section>
+    </main>
     <footer></footer>
 </body>
 
